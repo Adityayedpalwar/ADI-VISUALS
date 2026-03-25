@@ -271,3 +271,25 @@ body{
 button, .btn{
     min-height:44px;
 }
+/* Paste this at the very end of style.css */
+
+@media screen and (max-width: 768px) {
+    .bg-video {
+        width: 100%;             /* Fits horizontally */
+        height: auto;            /* Prevents vertical stretching */
+        top: 50%;                /* Centers the video vertically */
+        transform: translateY(-50%); 
+        object-fit: contain;     /* Ensures no parts of the video are cut off */
+    }
+
+    .hero {
+        background: #000;        /* Fills the top/bottom gaps with black */
+        display: flex;
+        align-items: center;     /* Keeps your text centered over the video */
+    }
+
+    .hero h1 {
+        font-size: 2rem;         /* Adjusts text size so it fits mobile screens */
+    }
+}
+
