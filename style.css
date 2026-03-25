@@ -263,33 +263,33 @@ body{
     font-size:16px;
 }
 
-@media (max-width:768px){
-    body{
-        font-size:14px;
-    }
-}
-button, .btn{
-    min-height:44px;
-}
-/* Paste this at the very end of style.css */
 
-@media screen and (max-width: 768px) {
+
+/* BACKGROUND VIDEO FIX */
+.bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the video precisely */
+    width: 100%;
+    height: auto; /* Allow height to scale naturally */
+    min-height: 100%; /* Ensures it still covers the background area */
+    object-fit: contain; /* Changed from cover to contain to prevent cropping */
+    z-index: -1;
+    filter: blur(2px) brightness(0.8); /* Adjusted brightness for better text readability */
+}
+
+/* Specific adjustment for Mobile (Vertical Screens) */
+@media (max-width: 768px) {
     .bg-video {
-        width: 100%;             /* Fits horizontally */
-        height: auto;            /* Prevents vertical stretching */
-        top: 50%;                /* Centers the video vertically */
-        transform: translateY(-50%); 
-        object-fit: contain;     /* Ensures no parts of the video are cut off */
+        width: 100vw;
+        height: auto;
+        object-fit: contain; /* Shows the full width of the video */
     }
-
+    
     .hero {
-        background: #000;        /* Fills the top/bottom gaps with black */
-        display: flex;
-        align-items: center;     /* Keeps your text centered over the video */
-    }
-
-    .hero h1 {
-        font-size: 2rem;         /* Adjusts text size so it fits mobile screens */
+        /* On mobile, if the video is horizontal, 100vh might leave gaps top/bottom. 
+           We use background-color as a fallback. */
+        background: black; 
     }
 }
-
