@@ -35,10 +35,12 @@ body{
 
 /* HERO */
 .hero{
-    position: relative;
-    width: 100%;
-    height: 100dvh; /* 🔥 IMPORTANT for mobile */
-    overflow: hidden;
+    height:100vh; 
+    background:urlBG('Intro.mp4') center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center; 
+    position:relative;
 }
 }
 
