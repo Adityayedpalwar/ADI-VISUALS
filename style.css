@@ -174,8 +174,8 @@ footer a{
 /* BACKGROUND VIDEO */
 .bg-video{
     position:absolute;
-    top:20%;
-    left:0;
+    top:00;
+    left:00;
     width:100%;
     height:auto%;
     object-fit:cover;
