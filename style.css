@@ -181,7 +181,6 @@ footer a{
     height: auto;
     object-fit: cover;
     object-position: center;
-    transform: translate(-50%, -50%); /* 🔥 FIX CENTER SHIFT */
     z-index: -1;
     filter: blur(2px) brightness(0.6);
 }
