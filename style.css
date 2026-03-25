@@ -36,7 +36,7 @@ body{
 /* HERO */
 .hero{
     height:100vh; 
-    background:urlBG('Intro.mp4') center/cover no-repeat;
+    background:urlBG('BG.png') center/cover no-repeat;
     display:flex;
     justify-content:center;
     align-items:center; 
@@ -183,7 +183,7 @@ footer a{
     object-position: center;
     transform: translate(-50%, -50%); /* 🔥 FIX CENTER SHIFT */
     z-index: -1;
-    filter: blur(6px) brightness(0.6);
+    filter: blur(2px) brightness(0.6);
 }
 
 /* Ensure hero stays above video */
@@ -205,12 +205,4 @@ footer a{
     position:relative;
     z-index:1;
 }
-@media (max-width: 768px){
 
-    .bg-video{
-        width: 120%;
-        height: 120%;
-        filter: blur(4px) brightness(0.6);
-    }
-
-}
