@@ -173,7 +173,7 @@ footer a{
 }
 /* BACKGROUND VIDEO */
 .bg-video{
-    position:center;
+    position:absolute;
     top:0;
     left:0;
     width:100%;
