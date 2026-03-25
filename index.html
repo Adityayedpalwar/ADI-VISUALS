@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADI.V</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">ADI-Visuals</div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#portfolio">Work</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="about">
+        <video class="bg-video" autoplay muted loop playsinline>
+            <source src="img,video\Intro.mp4" type="video/mp4">
+        </video>
+
+        <div class="overlay"></div>
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Visual Storyteller</h1>
+            <p>Editing • Motion • Design</p>
+            <a href="#portfolio" class="btn">Explore Work</a>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="portfolio" id="portfolio">
+
+        <div class="filter-buttons">
+            <button onclick="filterSelection('all')">All</button>
+            <button onclick="filterSelection('photography')">Photography</button>
+            <button onclick="filterSelection('posters')">Posters</button>
+            <button onclick="filterSelection('edits')">Edits</button>
+            <button onclick="filterSelection('others')">Others</button>
+        </div>
+
+
+        <div class="grid">
+
+            <div class="card photography">
+                <img src="img,video\img1.png">
+                <div class="overlay-text">Photography</div>
+            </div>
+            <div class="card photography">
+                <img src="img,video\img2.png">
+                <div class="overlay-text">Photography</div>
+            </div>
+            <div class="card photography">
+                <img src="img,video\img3.png">
+                <div class="overlay-text">Photography</div>
+            </div>
+
+
+
+            <div class="card posters">
+                <img src="img,video\p0.png">
+                <div class="overlay-text">Posters</div>
+            </div>
+            <div class="card posters">
+                <img src="img,video\p1.png">
+                <div class="overlay-text">Posters</div>
+            </div>
+            <div class="card posters">
+                <img src="img,video\p2.png">
+                <div class="overlay-text">Posters</div>
+            </div>
+            <div class="card posters">
+                <img src="img,video\p3.png">
+                <div class="overlay-text">Posters</div>
+            </div>
+            <div class="card posters">
+                <img src="img,video\p4.png">
+                <div class="overlay-text">Posters</div>
+            </div>
+            <div class="card posters">
+                <img src="img,video\p5.png">
+                <div class="overlay-text">Posters</div>
+            </div>
+            <div class="card posters">
+                <img src="img,video\p6.png">
+                <div class="overlay-text">Posters</div>
+            </div>
+            <div class="card posters">
+                <img src="img,video\p7.png">
+                <div class="overlay-text">Posters</div>
+            </div>
+            <div class="card posters">
+                <img src="img,video\P8.png">
+                <div class="overlay-text">Posters</div>
+            </div>
+            <div class="card posters">
+                <img src="img,video\p9.png">
+                <div class="overlay-text">Posters</div>
+            </div>
+
+
+
+
+            <div class="card edits">
+                <video src="img,video\Intro.mp4" muted loop onclick="toggleSound(this)"></video>
+                <div class="overlay-text">AA23 Edit</div>
+            </div>
+            <div class="card edits">
+                <video src="img,video\GT 650 v1.mp4" muted loop onclick="toggleSound(this)"></video>
+                <div class="overlay-text">Dhurandhar X GT 650</div>
+            </div>
+            <div class="card edits">
+                <video src="img,video\GT 650 v2.mp4" muted loop onclick="toggleSound(this)"></video>
+                <div class="overlay-text">Tere Liyee X GT 650</div>
+            </div>
+            <div class="card edits">
+                <video src="img,video\V1.mp4" muted loop onclick="toggleSound(this)"></video>
+                <div class="overlay-text">Cutout Edit</div>
+            </div>
+            <div class="card edits">
+                <video src="img,video\V2.mp4" muted loop onclick="toggleSound(this)"></video>
+                <div class="overlay-text">Random Edits</div>
+            </div>
+            <div class="card edits">
+                <video src="img,video\V3.mp4" muted loop onclick="toggleSound(this)"></video>
+                <div class="overlay-text">Vertical format Edits</div>
+            </div>
+            <div class="card edits">
+                <video src="img,video\V4.mp4" muted loop onclick="toggleSound(this)"></video>
+                <div class="overlay-text">Podcast Edits</div>
+            </div>
+            <div class="card edits">
+                <video src="img,video\V5.mp4" muted loop onclick="toggleSound(this)"></video>
+                <div class="overlay-text">Masking Edits</div>
+            </div>
+
+            <div class="card edits">
+                <video src="img,video\V6.mp4" muted loop onclick="toggleSound(this)"></video>
+                <div class="overlay-text">Anime Edits</div>
+            </div>
+            <div class="card edits">
+                <video src="img,video\V7.mp4" muted loop onclick="toggleSound(this)"></video>
+                <div class="overlay-text">Anime Edits</div>
+            </div>
+            <div class="card edits">
+                <video src="img,video\V8.mp4" muted loop onclick="toggleSound(this)"></video>
+                <div class="overlay-text">Anime Edits</div>
+            </div>
+
+
+            <div class="card others">
+                <video src="img,video\PPT.mp4" muted loop onclick="toggleSound(this)"></video>
+                <div class="overlay-text">Netflix And Data SciencePPT</div>
+            </div>
+            <div class="card others">
+                <video src="img,video\CANVA.mp4" muted loop onclick="toggleSound(this)"></video>
+                <div class="overlay-text">Advertisement Template</div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+        <a href="https://www.instagram.com/aditya_yedpalwar"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.instagram.com/amprotagonist"><i class="fa-brands fa-instagram"></i></a>
+        <a href="mailto:adityayedpalwar125207@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="mailto:amprotagonist101@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://t.me/yedpalwar_a" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

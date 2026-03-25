@@ -1,0 +1,205 @@
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    background:black;
+    color:white;
+}
+
+/* NAVBAR */
+.navbar{
+    position:fixed;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    padding:20px;
+    z-index:100;
+    background:rgba(0,0,0,0.4);
+    backdrop-filter:blur(10px);
+}
+
+.logo{
+    color:#f02b50;
+    font-weight:bold;
+}
+
+.nav-links a{
+    color:white;
+    margin-left:20px;
+    text-decoration:none;
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    background:url('BG.png') center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+}
+
+.hero-content{
+    position:relative;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:3rem;
+    letter-spacing:2px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 20px;
+    background:#f02b50;
+    color:black;
+    text-decoration:none;
+}
+
+/* PORTFOLIO */
+.portfolio{
+    padding:80px 20px;
+}
+
+.filter-buttons{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.filter-buttons button{
+    padding:10px;
+    margin:5px;
+    background:#f02b50;
+    border:none;
+    cursor:pointer;
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+/* CARD */
+.card{
+    position:relative;
+    overflow:hidden;
+    border-radius:15px;
+}
+
+.card img,
+.card video{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:0.5s;
+}
+
+/* CINEMATIC EFFECT */
+.card:hover img,
+.card:hover video{
+    transform:scale(1.1);
+    filter:brightness(0.6);
+}
+
+/* TEXT OVERLAY */
+.overlay-text{
+    position:absolute;
+    bottom:10px;
+    left:10px;
+    font-size:20px;
+    opacity:0;
+    transition:0.5s;
+}
+
+.card:hover .overlay-text{
+    opacity:1;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+}
+
+footer a{
+    color:#f02b50;
+    margin:10px;
+    font-size:24px;
+}
+.video-zoom {
+    position: fixed !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 80vw;
+    height: 80vh;
+    z-index: 9999;
+    transition: all 0.5s ease;
+    border-radius: 15px;
+    box-shadow: 0 0 40px rgba(0,0,0,0.8);
+}
+
+.video-zoom-active {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+}
+
+/* Dark background overlay */
+.video-overlay {
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.9);
+    z-index:9998;
+    cursor: pointer;
+}
+/* BACKGROUND VIDEO */
+.bg-video{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    z-index:-1;
+
+    filter: blur(2px) brightness(1.5);
+}
+
+/* Ensure hero stays above video */
+.hero{
+    position:relative;
+    overflow:hidden;
+}
+
+/* Optional overlay (dark cinematic effect) */
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+    z-index:0;
+}
+
+.hero-content{
+    position:relative;
+    z-index:1;
+}
