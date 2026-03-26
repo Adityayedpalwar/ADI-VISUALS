@@ -182,7 +182,7 @@ footer a{
     object-fit: cover;
     object-position: center;
     z-index: -1;
-    filter: blur(2px) brightness(1.5);
+    filter: blur(2px) ;
 }
 
 /* Ensure hero stays above video */
